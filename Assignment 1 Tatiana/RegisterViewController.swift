@@ -109,7 +109,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                
                let data = try! NSKeyedArchiver.archivedData(withRootObject: users, requiringSecureCoding: false)
                UserDefaults.standard.set(data, forKey: "users")
-               showMessage(msg: "User registered successfully", controller: self)
+               showMessageAndRedirect(msg: "User registered successfully", controller: self)
            }
             else
             {

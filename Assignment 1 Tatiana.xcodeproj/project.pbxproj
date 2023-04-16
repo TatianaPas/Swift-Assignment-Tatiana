@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		417EBE4929E77D3200008883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE4829E77D3200008883 /* AppDelegate.swift */; };
 		417EBE4B29E77D3200008883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE4A29E77D3200008883 /* SceneDelegate.swift */; };
-		417EBE4D29E77D3200008883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE4C29E77D3200008883 /* ViewController.swift */; };
+		417EBE4D29E77D3200008883 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE4C29E77D3200008883 /* LoginViewController.swift */; };
 		417EBE5029E77D3200008883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417EBE4E29E77D3200008883 /* Main.storyboard */; };
 		417EBE5229E77D3300008883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417EBE5129E77D3300008883 /* Assets.xcassets */; };
 		417EBE5529E77D3300008883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417EBE5329E77D3300008883 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,16 @@
 		417EBE6329E7E93400008883 /* SiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6229E7E93400008883 /* SiteModel.swift */; };
 		417EBE6529E7ECB600008883 /* ProjectMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6429E7ECB600008883 /* ProjectMethods.swift */; };
 		417EBE6929E9265700008883 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6829E9265700008883 /* LoggedInViewController.swift */; };
+		417EBE6B29EC949E00008883 /* AddNewSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */; };
+		417EBE6D29EC94B600008883 /* SearchSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6C29EC94B600008883 /* SearchSiteViewController.swift */; };
+		417EBE6F29EC94D000008883 /* AllSitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6E29EC94D000008883 /* AllSitesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		417EBE4529E77D3200008883 /* Assignment 1 Tatiana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 1 Tatiana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		417EBE4829E77D3200008883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417EBE4A29E77D3200008883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		417EBE4C29E77D3200008883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		417EBE4C29E77D3200008883 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		417EBE4F29E77D3200008883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		417EBE5129E77D3300008883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417EBE5429E77D3300008883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		417EBE6229E7E93400008883 /* SiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteModel.swift; sourceTree = "<group>"; };
 		417EBE6429E7ECB600008883 /* ProjectMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMethods.swift; sourceTree = "<group>"; };
 		417EBE6829E9265700008883 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSiteViewController.swift; sourceTree = "<group>"; };
+		417EBE6C29EC94B600008883 /* SearchSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSiteViewController.swift; sourceTree = "<group>"; };
+		417EBE6E29EC94D000008883 /* AllSitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSitesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +74,19 @@
 			children = (
 				417EBE4829E77D3200008883 /* AppDelegate.swift */,
 				417EBE4A29E77D3200008883 /* SceneDelegate.swift */,
-				417EBE4C29E77D3200008883 /* ViewController.swift */,
+				417EBE4C29E77D3200008883 /* LoginViewController.swift */,
 				417EBE4E29E77D3200008883 /* Main.storyboard */,
 				417EBE5129E77D3300008883 /* Assets.xcassets */,
 				417EBE5329E77D3300008883 /* LaunchScreen.storyboard */,
 				417EBE5629E77D3300008883 /* Info.plist */,
-				417EBE5C29E7900800008883 /* RegisterViewController.swift */,
 				417EBE6029E7B5BC00008883 /* UserModel.swift */,
 				417EBE6229E7E93400008883 /* SiteModel.swift */,
 				417EBE6429E7ECB600008883 /* ProjectMethods.swift */,
+				417EBE5C29E7900800008883 /* RegisterViewController.swift */,
 				417EBE6829E9265700008883 /* LoggedInViewController.swift */,
+				417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */,
+				417EBE6C29EC94B600008883 /* SearchSiteViewController.swift */,
+				417EBE6E29EC94D000008883 /* AllSitesViewController.swift */,
 			);
 			path = "Assignment 1 Tatiana";
 			sourceTree = "<group>";
@@ -153,12 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417EBE4D29E77D3200008883 /* ViewController.swift in Sources */,
+				417EBE4D29E77D3200008883 /* LoginViewController.swift in Sources */,
 				417EBE4929E77D3200008883 /* AppDelegate.swift in Sources */,
 				417EBE6329E7E93400008883 /* SiteModel.swift in Sources */,
+				417EBE6B29EC949E00008883 /* AddNewSiteViewController.swift in Sources */,
 				417EBE4B29E77D3200008883 /* SceneDelegate.swift in Sources */,
+				417EBE6F29EC94D000008883 /* AllSitesViewController.swift in Sources */,
 				417EBE6129E7B5BC00008883 /* UserModel.swift in Sources */,
 				417EBE6529E7ECB600008883 /* ProjectMethods.swift in Sources */,
+				417EBE6D29EC94B600008883 /* SearchSiteViewController.swift in Sources */,
 				417EBE5D29E7900800008883 /* RegisterViewController.swift in Sources */,
 				417EBE6929E9265700008883 /* LoggedInViewController.swift in Sources */,
 			);
