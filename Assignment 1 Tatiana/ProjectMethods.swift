@@ -19,6 +19,22 @@ class KeyboardNotificationUtils{
 }
 
 var users = [User]()
+var sites = getSites()
+
+
+func getSites()->[Site]
+{
+    if UserDefaults.standard.value(forKey: "sites") != nil
+    {
+        let data = UserDefaults.standard.value(forKey: "sites") as! Data
+        let sites = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)as! [Site]
+        return sites
+    } else
+    {
+        return [Site]()
+    }
+}
+
 
 // get all users
 func readUserData() -> [User]
@@ -41,7 +57,7 @@ func showMessage(msg:String, controller: UIViewController)
     alert.addAction(action)
     controller.present(alert, animated: true, completion: nil)
 }
-
+//display alert message and redirect to login screen
 func showMessageAndRedirect(msg:String, controller: UIViewController)
 
 {
