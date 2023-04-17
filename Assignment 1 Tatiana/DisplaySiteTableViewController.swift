@@ -39,6 +39,8 @@ class DisplaySiteTableViewController: UITableViewController {
         
         cell.nameTextField.text = getSites()[indexPath.row].name
         cell.imageViewCell.image =  getSites()[indexPath.row].image
+        cell.addressTextField.text = getSites()[indexPath.row].address
+        cell.descriptionTextField.text = getSites()[indexPath.row].siteDescription
 
         
 

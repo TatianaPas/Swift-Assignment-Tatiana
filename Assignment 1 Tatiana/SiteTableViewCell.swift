@@ -11,9 +11,10 @@ class SiteTableViewCell: UITableViewCell {
 
       
     @IBOutlet weak var nameTextField: UILabel!
+    @IBOutlet weak var addressTextField: UILabel!
     @IBOutlet weak var imageViewCell: UIImageView!
     
-    
+    @IBOutlet weak var descriptionTextField: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
