@@ -21,16 +21,16 @@ class DisplaySiteTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-/*
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return getSites().count
     }
- */
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return getSites().count
+        return 1
     }
 
     let dateFormater = DateFormatter()
@@ -39,10 +39,10 @@ class DisplaySiteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! SiteTableViewCell
         
         
-        cell.nameTextField.text = getSites()[indexPath.row].name
-        cell.imageViewCell.image =  getSites()[indexPath.row].image
-        cell.addressTextField.text =  getSites()[indexPath.row].address
-        cell.descriptionTextField.text = getSites()[indexPath.row].siteDescription
+        cell.nameTextField.text = getSites()[indexPath.section].name
+        cell.imageViewCell.image =  getSites()[indexPath.section].image
+        cell.addressTextField.text =  getSites()[indexPath.section].address
+       // cell.descriptionTextField.text = getSites()[indexPath.section].siteDescription
 
         return cell
     }
