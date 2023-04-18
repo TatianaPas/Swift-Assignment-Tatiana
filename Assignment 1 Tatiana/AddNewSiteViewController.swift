@@ -60,15 +60,23 @@ class AddNewSiteViewController: UIViewController, UIImagePickerControllerDelegat
         let description = descriptionTextField.text!
         let sitePicture = imageView.image
        
+        let date = Date.now
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = .short
+        
+        
+        let saveDate = dateFormatter.string(from: date)
+        
 
-        let newSite = Site(name: siteName, address: siteAddress, siteDescription: description, date: Date.now, image: sitePicture!)
+        let newSite = Site(name: siteName, address: siteAddress, siteDescription: description, saveDate: saveDate, image: sitePicture!)
            
         
-        var sites = getSites()
-           sites.append(newSite)
+        var savedSites = getSites()
+        savedSites.append(newSite)
            
-           let data = try! NSKeyedArchiver.archivedData(withRootObject: sites, requiringSecureCoding: false)
-           UserDefaults.standard.set(data, forKey: "sites")
+           let data = try! NSKeyedArchiver.archivedData(withRootObject: savedSites, requiringSecureCoding: false)
+           UserDefaults.standard.set(data, forKey: "savedSites")
            showMessage(msg: "New site saved successfully", controller: self)
         
         nameTextField.text?.removeAll()

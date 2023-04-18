@@ -1,13 +1,15 @@
 //
-//  DisplaySiteTableViewController.swift
+//  ResultsTableViewController.swift
 //  Assignment 1 Tatiana
 //
-//  Created by Tatiana Pasechnik on 17/04/23.
+//  Created by Tatiana Pasechnik on 18/04/23.
 //
 
 import UIKit
 
-class DisplaySiteTableViewController: UITableViewController {
+class ResultsTableViewController: UITableViewController {
+    
+    var resultsArray = [Site]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,44 +19,33 @@ class DisplaySiteTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
     }
 
     // MARK: - Table view data source
-/*
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
- */
+
+   
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return getSites().count
+        return resultsArray.count
     }
 
-    let dateFormater = DateFormatter()
-    
+ 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! SiteTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+
         
-        
-        cell.nameTextField.text = getSites()[indexPath.row].name
-        cell.imageViewCell.image =  getSites()[indexPath.row].image
-        cell.addressTextField.text =  getSites()[indexPath.row].address
-        cell.descriptionTextField.text = getSites()[indexPath.row].siteDescription
 
         return cell
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-     */
-    
+    */
 
     /*
     // Override to support editing the table view.

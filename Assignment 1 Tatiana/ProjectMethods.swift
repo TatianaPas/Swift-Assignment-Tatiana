@@ -19,16 +19,16 @@ class KeyboardNotificationUtils{
 }
 
 var users = [User]()
-var sites = getSites()
+var savedSites = getSites()
 
 
 func getSites()->[Site]
 {
-    if UserDefaults.standard.value(forKey: "sites") != nil
+    if UserDefaults.standard.value(forKey: "savedSites") != nil
     {
-        let data = UserDefaults.standard.value(forKey: "sites") as! Data
-        let sites = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)as! [Site]
-        return sites
+        let data = UserDefaults.standard.value(forKey: "savedSites") as! Data
+        let savedSites = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)as! [Site]
+        return savedSites
     } else
     {
         return [Site]()
@@ -87,7 +87,7 @@ func searchUser (username:String) ->Bool
 //check if user is in database whie logging in
 func loginValidation(username: String, password: String)-> Bool
 {
-    var users = readUserData()
+    let users = readUserData()
     for us in users
     {
         if us.username == username && us.password == password

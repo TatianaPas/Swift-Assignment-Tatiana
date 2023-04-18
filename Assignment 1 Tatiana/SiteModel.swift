@@ -15,16 +15,16 @@ class Site: NSObject, NSCoding
     var name: String
     var address: String
     var siteDescription: String
-    var date: Date
+    var saveDate: String
     var image: UIImage
  
 
-    init(name:String,address:String,siteDescription:String,date:Date,image:UIImage) {
+    init(name:String,address:String,siteDescription:String,saveDate:String,image:UIImage) {
         self.id = UUID().uuidString
         self.name = name
         self.address = address
         self.siteDescription = siteDescription
-        self.date = date
+        self.saveDate = saveDate
         self.image = image
 
     }
@@ -34,7 +34,7 @@ class Site: NSObject, NSCoding
         coder.encode(name,forKey: "name")
         coder.encode(address,forKey: "address")
         coder.encode(siteDescription,forKey: "siteDescription")
-        coder.encode(date, forKey: "date")
+        coder.encode(saveDate, forKey: "saveDate")
         coder.encode(image, forKey: "image")
   
     }
@@ -44,7 +44,7 @@ class Site: NSObject, NSCoding
         self.name = coder.decodeObject(forKey: "name") as! String
         self.address = coder.decodeObject(forKey: "address") as! String
         self.siteDescription = coder.decodeObject(forKey: "siteDescription") as! String
-        self.date = coder.decodeObject(forKey: "date") as! Date
+        self.saveDate = coder.decodeObject(forKey: "saveDate") as! String
         self.image = coder.decodeObject(forKey: "image") as! UIImage
 
     }
