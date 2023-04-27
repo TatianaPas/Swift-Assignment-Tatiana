@@ -12,6 +12,10 @@ class SearchTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameTextField: UILabel!
     
+    @IBOutlet weak var addressTextField: UILabel!
+    
+    @IBOutlet weak var imageViewCell: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

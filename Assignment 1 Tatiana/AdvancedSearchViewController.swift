@@ -1,21 +1,31 @@
 //
-//  SearchSiteViewController.swift
+//  AdvancedSearchViewController.swift
 //  Assignment 1 Tatiana
 //
-//  Created by Tatiana Pasechnik on 17/04/23.
+//  Created by Tatiana Pasechnik on 27/04/23.
 //
 
 import UIKit
 
-class AdvancedSearchSiteViewController: UIViewController {
+class AdvancedSearchViewController: UIViewController {
 
+   
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    @IBAction func printDateBnt(_ sender: UIButton)
+    {
+        print(datePicker.date)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
     }
+   
     
-
     /*
     // MARK: - Navigation
 

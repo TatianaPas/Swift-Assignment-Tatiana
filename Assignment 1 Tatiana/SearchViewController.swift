@@ -12,12 +12,23 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var promoImage: UIImageView!
     var filteredArray = [Site]()
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    @IBAction func dateChanged(_ sender: UIDatePicker)
+    {
+        let selectedDate = sender.date
+        let dateString = selectedDate.description(with: NSLocale.current)
+        
+        
+    }
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredArray.count
     }
 
@@ -26,7 +37,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellSearch", for: indexPath) as! SearchTableViewCell
         
         
-         cell.textLabel?.text = filteredArray[indexPath.row].name
+         cell.nameTextField?.text = filteredArray[indexPath.row].name
+         cell.addressTextField?.text = filteredArray[indexPath.row].saveDate
+         cell.imageViewCell?.image = filteredArray[indexPath.row].image
+         
 
         return cell
     }
@@ -34,7 +48,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        filteredArray = getSites()
+        filteredArray = []
         searchBar.delegate = self
     }
     
@@ -45,8 +59,16 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             savedSites.address.lowercased().range(of: searchText.lowercased()) != nil ||
             savedSites.siteDescription.lowercased().range(of: searchText.lowercased()) != nil
         })
+        if !filteredArray.isEmpty
+        {
+            promoImage.isHidden = true
+        } else
+        {
+            promoImage.isHidden = false
+        }
         
         self.tableView.reloadData()
+        
     }
      
 
