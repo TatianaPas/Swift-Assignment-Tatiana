@@ -61,12 +61,10 @@ class AddNewSiteViewController: UIViewController, UIImagePickerControllerDelegat
         let sitePicture = imageView.image
        
         let date = Date.now
-        let dateFormatter = DateFormatter()
         
-        dateFormatter.dateStyle = .short
-        
-        
-        let saveDate = dateFormatter.string(from: date)
+        let searchDateFormatter = DateFormatter()
+        searchDateFormatter.dateFormat = "dd/MM/yyyy"
+        let saveDate = searchDateFormatter.string(from: date)
         
 
         let newSite = Site(name: siteName, address: siteAddress, siteDescription: description, saveDate: saveDate, image: sitePicture!)

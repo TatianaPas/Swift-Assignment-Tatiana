@@ -24,7 +24,6 @@
 		417EBE7529ED1AF600008883 /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */; };
 		417EBE7729EE157F00008883 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7629EE157F00008883 /* SearchViewController.swift */; };
 		417EBE7B29EE1B0200008883 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7A29EE1B0200008883 /* SearchTableViewCell.swift */; };
-		41B6BC4529FA0ED500134A29 /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6BC4429FA0ED500134A29 /* AdvancedSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
 		417EBE7629EE157F00008883 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		417EBE7A29EE1B0200008883 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		41B6BC4429FA0ED500134A29 /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 				417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */,
 				417EBE7629EE157F00008883 /* SearchViewController.swift */,
 				417EBE7A29EE1B0200008883 /* SearchTableViewCell.swift */,
-				41B6BC4429FA0ED500134A29 /* AdvancedSearchViewController.swift */,
 			);
 			path = "Assignment 1 Tatiana";
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 				417EBE6529E7ECB600008883 /* ProjectMethods.swift in Sources */,
 				417EBE5D29E7900800008883 /* RegisterViewController.swift in Sources */,
 				417EBE6929E9265700008883 /* LoggedInViewController.swift in Sources */,
-				41B6BC4529FA0ED500134A29 /* AdvancedSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

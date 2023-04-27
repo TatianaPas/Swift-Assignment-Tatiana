@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
  
     
@@ -20,10 +21,27 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction func dateChanged(_ sender: UIDatePicker)
     {
         let selectedDate = sender.date
-        let dateString = selectedDate.description(with: NSLocale.current)
+        let searchDateFormatter = DateFormatter()
+        searchDateFormatter.dateFormat = "dd/MM/yyyy"
+        let dateFormattedStr: String = searchDateFormatter.string(from: selectedDate)
         
+        filteredArray = savedSites.filter({(savedSites)-> Bool in
+            return savedSites.saveDate == dateFormattedStr
+    })
+        if !filteredArray.isEmpty
+        {
+            promoImage.isHidden = true
+        } else
+        {
+            promoImage.isHidden = false
+        }
+        
+        self.tableView.reloadData()
         
     }
+                                          
+                                          
+                                          
     
     
     
@@ -38,7 +56,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         
         
          cell.nameTextField?.text = filteredArray[indexPath.row].name
-         cell.addressTextField?.text = filteredArray[indexPath.row].saveDate
+         cell.addressTextField?.text = filteredArray[indexPath.row].address
          cell.imageViewCell?.image = filteredArray[indexPath.row].image
          
 
