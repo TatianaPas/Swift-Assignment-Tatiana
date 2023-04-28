@@ -11,6 +11,12 @@ class DisplaySiteTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        for x in getSites()
+        {
+           
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,8 +38,6 @@ class DisplaySiteTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
-
-    let dateFormater = DateFormatter()
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! SiteTableViewCell

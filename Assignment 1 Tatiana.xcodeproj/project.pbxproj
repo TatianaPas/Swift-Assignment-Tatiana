@@ -19,7 +19,6 @@
 		417EBE6529E7ECB600008883 /* ProjectMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6429E7ECB600008883 /* ProjectMethods.swift */; };
 		417EBE6929E9265700008883 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6829E9265700008883 /* LoggedInViewController.swift */; };
 		417EBE6B29EC949E00008883 /* AddNewSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */; };
-		417EBE6F29EC94D000008883 /* AllSitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE6E29EC94D000008883 /* AllSitesViewController.swift */; };
 		417EBE7129ED154200008883 /* DisplaySiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7029ED154200008883 /* DisplaySiteTableViewController.swift */; };
 		417EBE7529ED1AF600008883 /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */; };
 		417EBE7729EE157F00008883 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBE7629EE157F00008883 /* SearchViewController.swift */; };
@@ -41,7 +40,6 @@
 		417EBE6429E7ECB600008883 /* ProjectMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMethods.swift; sourceTree = "<group>"; };
 		417EBE6829E9265700008883 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSiteViewController.swift; sourceTree = "<group>"; };
-		417EBE6E29EC94D000008883 /* AllSitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSitesViewController.swift; sourceTree = "<group>"; };
 		417EBE7029ED154200008883 /* DisplaySiteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySiteTableViewController.swift; sourceTree = "<group>"; };
 		417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
 		417EBE7629EE157F00008883 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				417EBE5C29E7900800008883 /* RegisterViewController.swift */,
 				417EBE6829E9265700008883 /* LoggedInViewController.swift */,
 				417EBE6A29EC949E00008883 /* AddNewSiteViewController.swift */,
-				417EBE6E29EC94D000008883 /* AllSitesViewController.swift */,
 				417EBE7029ED154200008883 /* DisplaySiteTableViewController.swift */,
 				417EBE7429ED1AF600008883 /* SiteTableViewCell.swift */,
 				417EBE7629EE157F00008883 /* SearchViewController.swift */,
@@ -178,7 +175,6 @@
 				417EBE6329E7E93400008883 /* SiteModel.swift in Sources */,
 				417EBE6B29EC949E00008883 /* AddNewSiteViewController.swift in Sources */,
 				417EBE4B29E77D3200008883 /* SceneDelegate.swift in Sources */,
-				417EBE6F29EC94D000008883 /* AllSitesViewController.swift in Sources */,
 				417EBE7729EE157F00008883 /* SearchViewController.swift in Sources */,
 				417EBE7B29EE1B0200008883 /* SearchTableViewCell.swift in Sources */,
 				417EBE6129E7B5BC00008883 /* UserModel.swift in Sources */,
